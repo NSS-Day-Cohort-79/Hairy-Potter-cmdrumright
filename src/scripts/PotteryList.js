@@ -1,7 +1,7 @@
 import { usePottery } from "./PotteryCatalog.js"
 
 export const potteryList = () => {
-    potteryHTML = ""
+    let potteryHTML = ""
     for (const sellItem of usePottery()) {
         potteryHTML += `
             <section class="pottery" id="pottery--${sellItem.id}">
